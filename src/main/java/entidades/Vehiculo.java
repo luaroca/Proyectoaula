@@ -8,45 +8,73 @@ package entidades;
  *
  * @author LUIS MANUEL
  */
-public class Vehiculo {
-    
-    String tipo;
+public abstract class Vehiculo {
+
+  // Atributo de tipo Registro
+  private Registro registro;
+
+  // Constructor que recibe un objeto Registro
+  public Vehiculo(Registro registro) {
+    this.registro = registro;
+  }
+         
+    // Método getter para el atributo registro
+  public Registro getRegistro() {
+    return registro;
+  }
+
+  // Método setter para el atributo registro
+  public void setRegistro(Registro registro) {
+    this.registro = registro;
+  }
+  
+  
+  
+  
+  
     String placa;
-    String documento;
+    String tipo;
+    String modelo;
+    String color;
 
-    
-    
-    public Vehiculo() {
-    }
-
-    public Vehiculo(String tipo, String placa, String documento) {
-        this.tipo = tipo;
+    public Vehiculo(String placa, String tipo, String modelo, String color) {
         this.placa = placa;
-        this.documento = documento;
-    }
-
-    public String getTipo() {
-        return tipo;
+        this.tipo = tipo;
+        this.modelo = modelo;
+        this.color = color;
     }
 
     public String getPlaca() {
         return placa;
     }
 
-    public String getDocumento() {
-        return documento;
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public String getTipo() {
+        return tipo;
     }
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 
-    public void setPlaca(String placa) {
-        this.placa = placa;
+    public String getModelo() {
+        return modelo;
     }
 
-    public void setDocumento(String documento) {
-        this.documento = documento;
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+    
+    
 }

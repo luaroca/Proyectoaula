@@ -4,10 +4,11 @@
  */
 package entidades;
 
-/**
- *
- * @author franc
- */
+
 public class Moto extends Vehiculo{
+    
+
+    
+    
     
 }
