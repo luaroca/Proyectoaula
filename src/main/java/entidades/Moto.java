@@ -11,8 +11,6 @@ public class Moto extends Vehiculo{
         super(placa, tipo, modelo, color);
     }
 
-  
-
     
     @Override
     public String getPlaca() {

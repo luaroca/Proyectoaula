@@ -8,8 +8,13 @@ import java.util.ArrayList;
 
 
 public abstract class Vehiculo {
+    String placa;
+    String tipo;
+    String modelo;
+    String color;
 
-  // Atributo de tipo Registro
+  /*  
+      // Atributo de tipo Registro
   private Registro registro;
 
   // Constructor que recibe un objeto Registro
@@ -26,16 +31,12 @@ public abstract class Vehiculo {
   public void setRegistro(Registro registro) {
     this.registro = registro;
   }
-  
-  
-  
-  
-  
-    String placa;
-    String tipo;
-    String modelo;
-    String color;
-
+    
+    
+    */
+    
+    
+    
     public Vehiculo(String placa, String tipo, String modelo, String color) {
         this.placa = placa;
         this.tipo = tipo;
@@ -89,8 +90,7 @@ public abstract class Vehiculo {
     
     public void consultarVehiculo(String placa){
         
-        
-        
+  
     }
     public ArrayList<Vehiculo> informarVehiculo() {
     

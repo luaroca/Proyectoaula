@@ -10,6 +10,10 @@ package entidades;
  */
 public class Carro extends Vehiculo{
 
+    public Carro(String placa, String tipo, String modelo, String color) {
+        super(placa, tipo, modelo, color);
+    }
+
 
     @Override
     public String getPlaca() {
