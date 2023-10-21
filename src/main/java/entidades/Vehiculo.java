@@ -4,10 +4,9 @@
  */
 package entidades;
 
-/**
- *
- * @author LUIS MANUEL
- */
+import java.util.ArrayList;
+
+
 public abstract class Vehiculo {
 
   // Atributo de tipo Registro
@@ -75,6 +74,27 @@ public abstract class Vehiculo {
     public void setColor(String color) {
         this.color = color;
     }
+    
+    
+    public void ingresaeVehiculo(String tipo, String placa, String modelo, String color){
+        
+    
+    }
+    
+    
+    public void eliminarVehiculo(String placa){
+        
+    }
+    
+    
+    public void consultarVehiculo(String placa){
+        
+        
+        
+    }
+    public ArrayList<Vehiculo> informarVehiculo() {
+    
+     }
     
     
 }

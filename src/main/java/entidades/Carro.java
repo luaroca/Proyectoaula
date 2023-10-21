@@ -9,5 +9,36 @@ package entidades;
  * @author franc
  */
 public class Carro extends Vehiculo{
+
+
+    @Override
+    public String getPlaca() {
+        return placa;
+    }
+
+    @Override
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    @Override
+    public String getModelo() {
+        return modelo;
+    }
+
+    @Override
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    @Override
+    public String getColor() {
+        return color;
+    }
+
+    @Override
+    public void setColor(String color) {
+        this.color = color;
+    }
     
 }
