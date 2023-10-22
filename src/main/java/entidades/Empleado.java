@@ -8,7 +8,6 @@ import java.time.LocalTime;
  * @author franc
  */
 public class Empleado extends Persona {
-    
     String cargo;
 
 

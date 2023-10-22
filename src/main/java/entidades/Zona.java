@@ -4,6 +4,8 @@
  */
 package entidades;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author franc
@@ -34,6 +36,23 @@ public class Zona {
         this.capacidad = capacidad;
     }
     
+    public void ingresarZona(int bloque, int puesto,boolean disponible){
+        
+    }
     
+    public void eliminarZona(int bloque){
+        
+        
+    }
+    
+    public void consultarZona(int bloque){
+        
+    }
+    
+        public ArrayList<String> informarZona() {
+        ArrayList<String> zonas = null;
+        return zonas;
+    }
     
 }
+
