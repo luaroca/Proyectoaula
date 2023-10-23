@@ -24,7 +24,7 @@ public class Operativo extends Empleado{
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
-
+   
     @Override
     public void entrada(LocalTime horaEntrada) {
         super.entrada(horaEntrada); 

@@ -109,13 +109,4 @@ public abstract class Persona {
         
         this.horaSalida=horaSalida;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

@@ -7,6 +7,12 @@ package entidades;
 
 public class Moto extends Vehiculo{
 
+ /* 
+    public Moto(){
+        
+    }
+*/    
+    
     public Moto(String placa, String tipo, String modelo, String color) {
         super(placa, tipo, modelo, color);
     }

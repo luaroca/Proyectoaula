@@ -9,6 +9,13 @@ import java.time.LocalTime;
  */
 public class Empleado extends Persona {
     String cargo;
+    
+/*
+    public Empleado(String id) {
+        super(id);
+    }
+*/
+ 
 
 
    
@@ -40,7 +47,7 @@ public class Empleado extends Persona {
     public void setHoraSalida(LocalTime horaSalida) {
         this.horaSalida = horaSalida;
     }
-    
+
     @Override
     public void salida(LocalTime horaSalida) {
         super.salida(horaSalida); 
@@ -50,7 +57,5 @@ public class Empleado extends Persona {
     public void entrada(LocalTime horaEntrada) {
         super.entrada(horaEntrada); 
     }
-  
     
-
 }

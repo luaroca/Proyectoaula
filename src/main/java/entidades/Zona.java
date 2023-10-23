@@ -14,10 +14,12 @@ public class Zona {
         
     int bloque;
     int capacidad;
+public ArrayList<PuestoParqueo> puestoparqueo; 
 
-    public Zona(int bloque, int capacidad) {
+    public Zona(int bloque, int capacidad, ArrayList<PuestoParqueo> puestoparqueo) {
         this.bloque = bloque;
         this.capacidad = capacidad;
+        this.puestoparqueo = puestoparqueo;
     }
 
     public int getBloque() {
@@ -35,7 +37,15 @@ public class Zona {
     public void setCapacidad(int capacidad) {
         this.capacidad = capacidad;
     }
-    
+
+    public ArrayList<PuestoParqueo> getPuestoparqueo() {
+        return puestoparqueo;
+    }
+
+    public void setPuestoparqueo(ArrayList<PuestoParqueo> puestoparqueo) {
+        this.puestoparqueo = puestoparqueo;
+    }
+
     public void ingresarZona(int bloque, int puesto,boolean disponible){
         
     }

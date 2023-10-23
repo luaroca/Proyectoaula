@@ -13,28 +13,6 @@ public abstract class Vehiculo {
     String modelo;
     String color;
 
-  /*  
-      // Atributo de tipo Registro
-  private Registro registro;
-
-  // Constructor que recibe un objeto Registro
-  public Vehiculo(Registro registro) {
-    this.registro = registro;
-  }
-         
-    // Método getter para el atributo registro
-  public Registro getRegistro() {
-    return registro;
-  }
-
-  // Método setter para el atributo registro
-  public void setRegistro(Registro registro) {
-    this.registro = registro;
-  }
-    
-    
-    */
-    
     
     
     public Vehiculo(String placa, String tipo, String modelo, String color) {

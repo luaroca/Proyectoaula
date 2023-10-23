@@ -43,11 +43,5 @@ public class Estudiante extends Persona {
     @Override
     public void entrada(LocalTime horaEntrada) {
         super.entrada(horaEntrada); 
-    }
-
-   
-   
-   
-    
-    
+    }   
 }

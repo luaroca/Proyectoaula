@@ -14,6 +14,10 @@ public class Docente extends Empleado {
     
     String facultad;
 
+    public Docente() {
+    }
+
+    
     public Docente(String facultad) {
         this.facultad = facultad;
     }

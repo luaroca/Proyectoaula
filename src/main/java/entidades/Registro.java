@@ -6,6 +6,7 @@ package entidades;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.ArrayList;
 
 /**
  *
@@ -13,20 +14,61 @@ import java.time.LocalTime;
  */
 
 
-/**
-NI IDEA PERO IGUAL VA ASI?DWIDIJISJIJAIJSAIJDSJIASJISAJDIS
-*/
+
 public class Registro {
     
     LocalTime horaEntrada;
     LocalTime horaSalida;
     LocalDate Fecha;
+    
+    public ArrayList<Persona> personas;
+    public ArrayList<Vehiculo> vehiculos;
+    public ArrayList<PuestoParqueo> puestoparqueo; 
+    public ArrayList<Zona> zona;
 
-    public Registro(LocalTime horaEntrada, LocalTime horaSalida, LocalDate Fecha) {
+    public Registro(LocalTime horaEntrada, LocalTime horaSalida, LocalDate Fecha, ArrayList<Persona> personas, ArrayList<Vehiculo> vehiculos, ArrayList<PuestoParqueo> puestoparqueo, ArrayList<Zona> zona) {
         this.horaEntrada = horaEntrada;
         this.horaSalida = horaSalida;
         this.Fecha = Fecha;
+        this.personas = personas;
+        this.vehiculos = vehiculos;
+        this.puestoparqueo = puestoparqueo;
+        this.zona = zona;
     }
+
+    public ArrayList<Persona> getPersonas() {
+        return personas;
+    }
+
+    public void setPersonas(ArrayList<Persona> personas) {
+        this.personas = personas;
+    }
+
+    public ArrayList<Vehiculo> getVehiculos() {
+        return vehiculos;
+    }
+
+    public void setVehiculos(ArrayList<Vehiculo> vehiculos) {
+        this.vehiculos = vehiculos;
+    }
+
+    public ArrayList<PuestoParqueo> getPuestoparqueo() {
+        return puestoparqueo;
+    }
+
+    public void setPuestoparqueo(ArrayList<PuestoParqueo> puestoparqueo) {
+        this.puestoparqueo = puestoparqueo;
+    }
+
+    public ArrayList<Zona> getZona() {
+        return zona;
+    }
+
+    public void setZona(ArrayList<Zona> zona) {
+        this.zona = zona;
+    }
+
+    
 
     public LocalTime getHoraEntrada() {
         return horaEntrada;
@@ -35,6 +77,7 @@ public class Registro {
     public void setHoraEntrada(LocalTime horaEntrada) {
         this.horaEntrada = horaEntrada;
     }
+
 
     public LocalTime getHoraSalida() {
         return horaSalida;
@@ -59,16 +102,11 @@ public class Registro {
     }
     
     public void eliminarRegistro(){
-     this.horaEntrada = null;
-     this.horaSalida = null;
-     this.Fecha = null;        
+           
     }
     
     public void consultarRegistro(){
  
-    System.out.println("Fecha: " + this.Fecha);
-    System.out.println("Hora de entrada: " + this.horaEntrada);
-    System.out.println("Hora de salida: " + this.horaSalida);
     }
     
     public void informarRegistro(){
