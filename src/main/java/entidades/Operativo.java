@@ -12,7 +12,38 @@ import java.time.LocalTime;
  */
 public class Operativo extends Empleado{
 
-    public Operativo() {
+    public Operativo(String id, String nombre, String cedula) {
+        super(id, nombre, cedula);
+    }
+
+    @Override
+    public String getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String getCedula() {
+        return cedula;
+    }
+
+    @Override
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
     }
 
     @Override

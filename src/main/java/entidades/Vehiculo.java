@@ -72,6 +72,8 @@ public abstract class Vehiculo {
     }
     public ArrayList<Vehiculo> informarVehiculo() {
     
+        return null;
+    
      }
     
     

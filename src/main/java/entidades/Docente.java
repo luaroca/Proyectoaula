@@ -14,13 +14,41 @@ public class Docente extends Empleado {
     
     String facultad;
 
-    public Docente() {
-    }
-
-    
-    public Docente(String facultad) {
+    public Docente(String facultad, String id, String nombre, String cedula) {
+        super(id, nombre, cedula);
         this.facultad = facultad;
     }
+
+    @Override
+    public String getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String getCedula() {
+        return cedula;
+    }
+
+    @Override
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
 
     public String getFacultad() {
         return facultad;
