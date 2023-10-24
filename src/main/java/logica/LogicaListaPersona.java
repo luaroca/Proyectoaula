@@ -18,7 +18,7 @@ public class LogicaListaPersona {
     private IPersona data;
     
     //Constructor
-    public LogicaListaPersona(IPersona data) {
+    public LogicaListaPersona() {
         this.data = new ListaPersona();
     }
     
@@ -32,8 +32,8 @@ public class LogicaListaPersona {
         this.data.eliminarPersona(cedula);
     }
     
-    public Persona consultarPersona(String cedula) {
-        Persona p = this.data.consultarPersona(cedula);
+    public Persona actualizarPersona(String cedula) {
+        Persona p = this.data.actualizarPersona(cedula);
         return p;
     }
     

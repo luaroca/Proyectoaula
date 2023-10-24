@@ -18,7 +18,7 @@ public class LogicaListaZona {
     private IZona data;
     
     //Contructor
-    public LogicaListaZona(IZona data) {
+    public LogicaListaZona() {
         this.data = new ListaZona();
     }
     
@@ -31,8 +31,8 @@ public class LogicaListaZona {
         this.data.eliminarZona(bloque);
     }
     
-    public Zona consultarRegistro(int bloque){
-        Zona z = this.data.consultarZona(bloque);
+    public Zona actualizarRegistro(int bloque){
+        Zona z = this.data.actualizarZona(bloque);
         return z;
     }
     

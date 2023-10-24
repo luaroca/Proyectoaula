@@ -24,7 +24,7 @@ public class ListaZona implements IZona {
     }
 
     @Override
-    public Zona consultarZona(int bloque) {
+    public Zona actualizarZona(int bloque) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 

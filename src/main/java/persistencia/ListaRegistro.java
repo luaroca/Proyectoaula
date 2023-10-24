@@ -29,7 +29,7 @@ public class ListaRegistro implements IRegistro {
     }
 
     @Override
-    public Registro consultarRegistro(String cedula) {
+    public Registro actualizarRegistro(String cedula) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     

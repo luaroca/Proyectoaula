@@ -16,6 +16,6 @@ public interface IRegistro {
     public void agregarRegistro(Registro r);
     public void eliminarRegistro(String cedula);
     public ArrayList<Registro> informarRegistro();
-    public Registro consultarRegistro(String cedula);
+    public Registro actualizarRegistro(String cedula);
     
 }

@@ -24,7 +24,7 @@ public class ListaPersona implements IPersona {
     }
 
     @Override
-    public Persona consultarPersona(String cedula) {
+    public Persona actualizarPersona(String cedula) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 

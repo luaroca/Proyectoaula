@@ -16,6 +16,6 @@ public interface IZona {
     
     public void agregarZona(Zona z);
     public void eliminarZona(int bloque);
-    public Zona consultarZona(int bloque);
+    public Zona actualizarZona(int bloque);
     public ArrayList<Zona> informarZona();
 }

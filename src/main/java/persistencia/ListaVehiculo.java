@@ -24,7 +24,7 @@ public class ListaVehiculo implements IVehiculo {
     }
 
     @Override
-    public Vehiculo consultarVehiculo(String placa) {
+    public Vehiculo actualizarVehiculo(String placa) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 

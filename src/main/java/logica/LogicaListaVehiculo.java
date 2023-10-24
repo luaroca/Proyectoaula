@@ -18,7 +18,7 @@ public class LogicaListaVehiculo {
     private IVehiculo data;
     
     //constructor
-    public LogicaListaVehiculo(IVehiculo data) {
+    public LogicaListaVehiculo() {
         this.data = new ListaVehiculo();
     }
     
@@ -31,8 +31,8 @@ public class LogicaListaVehiculo {
         this.data.eliminarVehiculo(placa);
     }
     
-    public Vehiculo consultarVehiculo(String placa) {
-        Vehiculo v = this.data.consultarVehiculo(placa);
+    public Vehiculo actualizarVehiculo(String placa) {
+        Vehiculo v = this.data.actualizarVehiculo(placa);
         return v;
     }
     

@@ -16,7 +16,7 @@ public class LogicaListaRegistro {
     
     private IRegistro data;
 
-    public LogicaListaRegistro(IRegistro data) {
+    public LogicaListaRegistro() {
         this.data = new ListaRegistro();
     }
     
@@ -32,8 +32,8 @@ public class LogicaListaRegistro {
         return this.data.informarRegistro();
     }
     
-    public Registro consultarRegistro(String cedula){
-        Registro r = this.data.consultarRegistro(cedula);
+    public Registro actualizarRegistro(String cedula){
+        Registro r = this.data.actualizarRegistro(cedula);
         return r;
     }
     
