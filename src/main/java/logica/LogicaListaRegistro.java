@@ -12,11 +12,11 @@ import persistencia.*;
  *
  * @author franc
  */
-public class LogicaRegistro {
+public class LogicaListaRegistro {
     
     private IRegistro data;
 
-    public LogicaRegistro(IRegistro data) {
+    public LogicaListaRegistro(IRegistro data) {
         this.data = new ListaRegistro();
     }
     

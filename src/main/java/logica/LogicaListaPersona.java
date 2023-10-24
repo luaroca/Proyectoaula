@@ -13,12 +13,12 @@ import persistencia.ListaPersona;
  *
  * @author franc
  */
-public class LogicaPersona {
+public class LogicaListaPersona {
     
     private IPersona data;
     
     //Constructor
-    public LogicaPersona(IPersona data) {
+    public LogicaListaPersona(IPersona data) {
         this.data = new ListaPersona();
     }
     

@@ -13,12 +13,12 @@ import persistencia.ListaVehiculo;
  *
  * @author franc
  */
-public class LogicaVehiculo {
+public class LogicaListaVehiculo {
     
     private IVehiculo data;
     
     //constructor
-    public LogicaVehiculo(IVehiculo data) {
+    public LogicaListaVehiculo(IVehiculo data) {
         this.data = new ListaVehiculo();
     }
     

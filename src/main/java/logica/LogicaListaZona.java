@@ -13,12 +13,12 @@ import persistencia.ListaZona;
  *
  * @author franc
  */
-public class LogicaZona {
+public class LogicaListaZona {
     
     private IZona data;
     
     //Contructor
-    public LogicaZona(IZona data) {
+    public LogicaListaZona(IZona data) {
         this.data = new ListaZona();
     }
     
