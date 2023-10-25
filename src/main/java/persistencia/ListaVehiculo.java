@@ -12,25 +12,34 @@ import java.util.ArrayList;
  * @author franc
  */
 public class ListaVehiculo implements IVehiculo {
+    
+    private ArrayList<Vehiculo> listaVehiculo;
+
+    
+    
+    public ListaVehiculo() {
+        this.listaVehiculo = new ArrayList();
+    }
+    
+    
 
     @Override
     public void ingresarVehiculo(Vehiculo r) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.listaVehiculo.add(r);
     }
 
     @Override
     public void eliminarVehiculo(String placa) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public Vehiculo actualizarVehiculo(String placa) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void actualizarVehiculo(String placa) {
     }
 
     @Override
     public ArrayList<Vehiculo> informarVehiculo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        ArrayList<Vehiculo> lista = new ArrayList(this.listaVehiculo);
+        return lista;
     }
     
 }

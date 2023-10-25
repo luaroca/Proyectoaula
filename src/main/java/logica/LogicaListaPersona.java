@@ -32,9 +32,8 @@ public class LogicaListaPersona {
         this.data.eliminarPersona(cedula);
     }
     
-    public Persona actualizarPersona(String cedula) {
-        Persona p = this.data.actualizarPersona(cedula);
-        return p;
+    public void actualizarPersona(String cedula) {
+        this.data.actualizarPersona(cedula);
     }
     
     public ArrayList<Persona> informarPersona(){

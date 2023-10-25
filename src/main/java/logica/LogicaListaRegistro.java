@@ -32,9 +32,8 @@ public class LogicaListaRegistro {
         return this.data.informarRegistro();
     }
     
-    public Registro actualizarRegistro(String cedula){
-        Registro r = this.data.actualizarRegistro(cedula);
-        return r;
+    public void actualizarRegistro(String cedula){
+        this.data.actualizarRegistro(cedula);
     }
     
 }

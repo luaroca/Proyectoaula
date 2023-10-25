@@ -12,25 +12,51 @@ import java.util.ArrayList;
  * @author franc
  */
 public class ListaPersona implements IPersona {
+    
+    private ArrayList<Persona> listaPersona;
+    
+    //contructor
+    public ListaPersona() {
+        this.listaPersona = new ArrayList();
+    }
+    
 
     @Override
     public void agregarPersona(Persona p) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.listaPersona.add(p);
     }
 
     @Override
     public void eliminarPersona(String cedula) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        Persona encontro = null;
+        for(Persona p: this.listaPersona){
+            if(p.getCedula().equals(cedula)){
+                encontro = p;
+                listaPersona.remove(p);
+                break;
+            }else{
+                System.out.println("La persona ingresada no existe...");
+            }
+        }
     }
 
     @Override
-    public Persona actualizarPersona(String cedula) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void actualizarPersona(String cedula) {
+        Persona encontro = null;
+        for(Persona p: this.listaPersona){
+            if(p.getCedula().equals(cedula)){
+                System.out.println("Ingrese el nuevo nombre: ");
+                System.out.println("Ingrese la nueva cedula: ");
+                break;
+            }else{
+                System.out.println("La persona ingresada no existe...");
+            }
+        }
     }
 
     @Override
     public ArrayList<Persona> informarPersona() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        ArrayList<Persona> lista = new ArrayList(this.listaPersona);
+        return lista;
     }
-    
 }

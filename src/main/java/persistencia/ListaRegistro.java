@@ -13,24 +13,42 @@ import java.util.ArrayList;
  */
 public class ListaRegistro implements IRegistro {
 
+    private ArrayList<Registro> listaRegistro;
+
+    //constructor
+    public ListaRegistro() {
+        this.listaRegistro = new ArrayList();
+    }
+    
+            
+    
     @Override
     public void agregarRegistro(Registro r) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.listaRegistro.add(r);
     }
 
     @Override
     public void eliminarRegistro(String cedula) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
     }
 
     @Override
     public ArrayList<Registro> informarRegistro() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        ArrayList<Registro> lista = new ArrayList(this.listaRegistro);
+        return lista;
     }
 
     @Override
-    public Registro actualizarRegistro(String cedula) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void actualizarRegistro(String cedula) {
+        Registro encontro = null;
+        for(Registro r: this.listaRegistro){
+//            if(r.getHoraEntrada){
+//                System.out.println("Ingrese el nuevo nombre: ");
+//                System.out.println("Ingrese la nueva cedula: ");
+//                break;
+//            }else{
+//                System.out.println("El registro ingresado no existe...");
+//            }
+        }
     }
-    
 }

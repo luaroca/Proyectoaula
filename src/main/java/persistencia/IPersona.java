@@ -15,6 +15,6 @@ public interface IPersona {
     
     public void agregarPersona(Persona p);
     public void eliminarPersona(String cedula);
-    public Persona actualizarPersona(String cedula);
+    public void actualizarPersona(String cedula);
     public ArrayList<Persona> informarPersona();
 }

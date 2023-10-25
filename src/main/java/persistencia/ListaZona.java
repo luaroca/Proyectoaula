@@ -12,25 +12,33 @@ import java.util.*;
  * @author franc
  */
 public class ListaZona implements IZona {
+    
+    private ArrayList<Zona> listaZona;
+    
+    
+
+    public ListaZona() {
+        this.listaZona = new ArrayList();
+    }
+    
 
     @Override
     public void agregarZona(Zona z) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.listaZona.add(z);
     }
 
     @Override
     public void eliminarZona(int bloque) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public Zona actualizarZona(int bloque) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void actualizarZona(int bloque) {
     }
 
     @Override
     public ArrayList<Zona> informarZona() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        ArrayList<Zona> lista = new ArrayList(this.listaZona);
+        return lista;
     }
     
 }

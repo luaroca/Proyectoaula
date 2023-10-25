@@ -31,9 +31,8 @@ public class LogicaListaZona {
         this.data.eliminarZona(bloque);
     }
     
-    public Zona actualizarRegistro(int bloque){
-        Zona z = this.data.actualizarZona(bloque);
-        return z;
+    public void actualizarRegistro(int bloque){
+        this.data.actualizarZona(bloque);
     }
     
     public ArrayList<Zona> informarRegistro(){

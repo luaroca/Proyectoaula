@@ -15,7 +15,7 @@ public interface IVehiculo {
     
     public void ingresarVehiculo(Vehiculo r);
     public void eliminarVehiculo(String placa);
-    public Vehiculo actualizarVehiculo(String placa);
+    public void actualizarVehiculo(String placa);
     public ArrayList<Vehiculo> informarVehiculo();
     
 }

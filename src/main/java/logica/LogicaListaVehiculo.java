@@ -31,9 +31,8 @@ public class LogicaListaVehiculo {
         this.data.eliminarVehiculo(placa);
     }
     
-    public Vehiculo actualizarVehiculo(String placa) {
-        Vehiculo v = this.data.actualizarVehiculo(placa);
-        return v;
+    public void actualizarVehiculo(String placa) {
+        this.data.actualizarVehiculo(placa);
     }
     
     public ArrayList<Vehiculo> informarVehiculo() {
